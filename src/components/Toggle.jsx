@@ -51,7 +51,7 @@ class ListAlbums extends React.Component {
                 {this.state.albums && this.state.albums.map((album) => (
                     <li key={album.id}
                         id={album.id}>
-                        <span>{album.title}: {this.state.users.findIndex(user => user.id === album.userId)}</span>
+                        <span>{album.title}: {this.state.users.find(u => u.id === album.userId).name}</span>
                        
                         </li>
                     
