@@ -24,7 +24,7 @@ class ListAlbums extends React.Component {
 
             const albums = await responseAlbums.json();
             const users = await responseUsers.json();
-                    console.log(users)
+                    
 
             this.setState({ albums, users, isLoading: false });
             
